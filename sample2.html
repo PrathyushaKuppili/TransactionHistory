@@ -3,14 +3,20 @@
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <title>Pay Out Invoice</title>
     <style> 
-        table {
+        .firstone {
   border: 2px solid black;
   padding: 20px;
   column-count: 3;
   object-fit: cover;
 }
-.newone{
-    border: 1px solid black;  
+#newone{
+    border: 1px solid black;
+    padding: 4px 8px;
+    border-collapse: collapse;
+}
+#newone td,#newone th{
+    border: 1px solid grey;
+  padding: 8px;
 }
 </style> 
 </head>
@@ -24,7 +30,7 @@
 </p>
 <h1><p style="color:black; text-align: center;" ><b>Transaction History</b></p></h1>
 <p style="color:black; text-align: center;" >(15 Oct 2020 - 07 Nov 2020)</p>
-<table style="width:100%">
+<table style="width:100%" class="firstone">
     <tr>
         <td>Total Debit(-)</td>
         <td>Total Credit(+)</td>
@@ -43,12 +49,12 @@
 </table>
 <br><br>
 
-<table style="width:100%" border="1" class="newone">
-    <tr>
-        <th>Date</th>
-        <th style="background-color: pink;">Debit(-)</th>
-        <th style="background-color: skyblue;">Credit(+)</th>
-        <th>balance</th>
+<table style="width:100%"  id="newone">
+    <tr align="center">
+        <th><b>Date</b></th>
+        <th><b>Debit(-)</b></th>
+        <th><b>Credit(+)</b></th>
+        <th><b>balance</b></th>
     </tr>
     <tr align="center">
         <td>Latest<br>07 Nov</td>
@@ -56,13 +62,13 @@
         <td style="background-color: skyblue;" ></td>
         <td style="color: coral;">570 Dr</td>
     </tr> 
-    <tr align="center">
+    <tr align="center" >
         <td>16 Oct</td>
         <td style="background-color: pink;">700</td>
         <td style="background-color: skyblue;"></td>
         <td style="color: coral;">570 Dr</td>
     </tr>
-    <tr align="center">
+    <tr align="center" >
         <td>16 Oct</td>
         <td style="background-color: pink;">50</td>
         <td style="background-color: skyblue;"></td>
