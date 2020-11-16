@@ -1,57 +1,85 @@
 <html>
 <head>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <title>Pay Out Invoice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @media only screen and (max-width:800px) {
-  /* For tablets: */
-  .table {
-    width: 80%;
-    padding: 0;
-  }
+    <style> 
+        .firstone {
+  border: 2px solid black;
+  padding: 20px;
+  column-count: 3;
+  object-fit: cover;
 }
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .table {
-    width: 100%;
-  }
+#newone{
+    border: 1px solid black;
+    padding: 4px 8px;
+    border-collapse: collapse;
 }
-    </style>
+#newone td,#newone th{
+    border: 1px solid grey;
+  padding: 8px;
+}
+</style> 
 </head>
 <body>
-<p style="color:black;">Pay Out Invoice</p>
-<table style="width:100%" class="table">
+<p style="background-color: blue; color: white; height: 100px;">
+    <br>
+    &nbsp;&nbsp;SK Enterprises
+    <br><br>
+    &nbsp;&nbsp;<i class="fas fa-phone-alt"></i>&nbsp;&nbsp;Call &nbsp;&nbsp;
+    <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp &nbsp;&nbsp;
+</p>
+<h1><p style="color:black; text-align: center;" ><b>Transaction History</b></p></h1>
+<p style="color:black; text-align: center;" >(15 Oct 2020 - 07 Nov 2020)</p>
+<table style="width:100%" class="firstone">
     <tr>
-        <th></th>
-        <th></th>
+        <td>Total Debit(-)</td>
+        <td>Total Credit(+)</td>
+        <td>Net Balance</td>
     </tr>
     <tr>
-        <td>Pay Out No</td>
-        <td>85</td>
-    </tr>
+        <td>700/-</td>
+        <td>200/-</td>
+        <td style="color: coral;">570 Dr</td>
+    </tr> 
     <tr>
-        <td>Shop Name</td>
-        <td>Patil Store</td>
-    </tr>
-    <tr>
-        <td>Customer Name</td>
-        <td>Agni</td>
-    </tr>
-    <tr>
-        <td>Mobile</td>
-        <td>6652118520</td>
-    </tr>
-    <tr>
-        <td>Paid By</td>
-        <td>Online Transfer</td>
-    </tr>
-    <tr>
-        <td>Reference Id</td>
-        <td>222688</td>
+        <td></td>
+        <td></td>
+        <td>(Greg will give)</td>
     </tr>
 </table>
-<hr>
-<p>Total Amount Paid :400.00</p>
-<hr>
+<br><br>
+
+<table style="width:100%"  id="newone">
+    <tr align="center">
+        <th><b>Date</b></th>
+        <th><b>Debit(-)</b></th>
+        <th><b>Credit(+)</b></th>
+        <th><b>balance</b></th>
+    </tr>
+    <tr align="center">
+        <td>Latest<br>07 Nov</td>
+        <td style="background-color: pink;">20</td>
+        <td style="background-color: skyblue;" ></td>
+        <td style="color: coral;">570 Dr</td>
+    </tr> 
+    <tr align="center" >
+        <td>16 Oct</td>
+        <td style="background-color: pink;">700</td>
+        <td style="background-color: skyblue;"></td>
+        <td style="color: coral;">570 Dr</td>
+    </tr>
+    <tr align="center" >
+        <td>16 Oct</td>
+        <td style="background-color: pink;">50</td>
+        <td style="background-color: skyblue;"></td>
+        <td style="color: green;">150 Dr</td>
+    </tr>
+    <tr align="center">
+        <td>15 Oct</td>
+        <td style="background-color: pink;">200</td>
+        <td style="background-color: skyblue;">200</td>
+        <td style="color: green;">150 Dr</td>
+    </tr>
+</table>
 </body>
 </html>
