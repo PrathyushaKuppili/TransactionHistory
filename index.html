@@ -4,17 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pay Out Invoice</title>
     <style> 
-       /* .firstone {
-  border: 2px solid black;
+      .firstone {
   padding: 20px;
   column-count: 3;
   object-fit: cover;
-}*/
+}
 #newone{
     border: 1px solid black;
     padding: 4px 8px;
     border-collapse: collapse;
-    
+    max-height: 5px;
 }
 #newone td,#newone th{
     border: 1px solid grey;
@@ -54,15 +53,22 @@
   width: 33.33%;
   padding: 5px;
 }
+.topright {
+  position: absolute;
+  top: 40px;
+  right: 16px;
+  font-size: 16px;
+}
 </style> 
 </head>
 <body>
-<p style="background-color: blue; color: white; height: 100px;">
+<p style="background-color: blue; color: white; height: 100px;"class="startback">
     <br>
-    &nbsp;&nbsp;SK Enterprises 
+    &nbsp;&nbsp;SK Enterprises
     <br><br>
     &nbsp;&nbsp;<i class="fas fa-phone-alt"></i>&nbsp;&nbsp;Call &nbsp;&nbsp;
-    <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp &nbsp;&nbsp;  
+    <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp &nbsp;&nbsp; 
+   <div class="topright" style="color: white;">OKAL</div>
 </p>
 <p style="color:black">Customer Name : Raghu Vamsi<br>Plan Name : Cable 300<br>Plan Start Date : 01 Jan 2021<br>Security Deposit : ₹500</p>
 <h1><p style="color:black; text-align: center; 
@@ -94,26 +100,10 @@
     <img src="upi.jpeg" alt="Snow" style="width:80%">
   </div>
 </div>
-<!--<p style="color:black; text-align: center;"></p>
+<p style="color:black; text-align: center;"></p>
 <table style="width:100%" class="firstone">
-    <tr>
-        <td>Total Debit(-)</td>
-        <td>Total Credit(+)</td>
-        <td>Net Balance</td>
-    </tr>
-    <tr>
-        <td>700/-</td>
-        <td>200/-</td>
-        <td style="color: coral;">570 Dr</td>
-    </tr> 
-    <tr>
-        <td></td>
-        <td></td>
-        <td>(Greg will give)</td>
-    </tr>
-</table>-->
-<br><br>
-<table style="width:100%"  id="newone">
+</table>
+<table id="newone" style="width:100%;"  >
     <tr align="center" style="background-color: #ebe4e4;">
         <th><b>Date</b></th>
         <th><b>Debit(-)</b></th>
