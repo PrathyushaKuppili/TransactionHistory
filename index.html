@@ -33,6 +33,22 @@
     width: 100%;
   }
 }
+/*.wrapper {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}*/
 </style> 
 </head>
 <body>
@@ -46,8 +62,26 @@
 <p style="color:black">Customer Name : Raghu Vamsi<br>Plan Name : Cable 300<br>Plan Start Date : 01 Jan 2021<br>Security Deposit : ₹500</p>
 <h1><p style="color:black; text-align: center; 
     " >Transaction History<h6 style="text-align: center;">(15 Oct 2020 - 07 Nov 2020)</h6></p></h1>
-<p style="text-align: center;"><img src="upi.jpeg" width="10%"></p>
-<p style="color:black; text-align: center;" ></p>
+<!--<p style="text-align: center;"><img src="upi.jpeg" width="30%"><button style="background-color: violet; color: blue;">PayNow</button></p>
+<div class="row">
+    <div class="column">
+        <p style="text-align: center;"><img src="upi.jpeg" width="30%"></p>
+    </div>
+    <div class="column">
+        <button style="background-color: violet; color: blue;">PayNow</button>
+    </div>
+  </div>-->
+<table>
+    <tr>
+      <td class="image"><p style="text-align: center;"><img src="upi.jpeg" width="30%"></p></td>
+      <td class="image"><p style="text-align: center;"><button>PayNow</button></p></td>
+    </tr>
+</table>
+<!--<div class="wrapper">
+    <img class="button" src="upi.jpeg" width="15%">
+    <button class="button">Another One</button>
+</div>-->
+<p style="color:black; text-align: center;"></p>
 <table style="width:100%" class="firstone">
     <tr>
         <td>Total Debit(-)</td>
